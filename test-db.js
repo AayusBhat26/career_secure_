@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
 // MongoDB connection string
-const MONGODB_URI = 'mongodb+srv://naayush448:eYmHTdTr9Dne8nVD@cluster0.co5dpst.mongodb.net/career_secure_db?retryWrites=true&w=majority&appName=Cluster0';
+const MONGODB_URI = '';
 
 const UserSchema = new mongoose.Schema({
   email: String,
