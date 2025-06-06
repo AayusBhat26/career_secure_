@@ -14,28 +14,6 @@ A professional Next.js application for user management with authentication, Mong
 - 🎨 **Modern UI/UX** - Professional design with intuitive navigation
 
 ## Quick Setup & Verification
-
-### Automated Setup
-Run one of these scripts for automatic setup and verification:
-
-**Windows Command Prompt:**
-```bash
-verify-project.bat
-```
-
-**PowerShell:**
-```bash
-.\verify-project.ps1
-```
-
-### Manual Setup
-1. **Install dependencies**: `npm install`
-2. **Build project**: `npm run build` 
-3. **Start development**: `npm run dev`
-4. **Visit**: http://localhost:3000
-
-### Project Status: ✅ PRODUCTION READY
-
 All features implemented and tested:
 - ✅ User authentication system
 - ✅ MongoDB integration
@@ -70,40 +48,28 @@ All features implemented and tested:
    cd career-secure-dashboard
    ```
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
 
-3. **Environment Setup**
+2. **Environment Setup**
    - Copy `.env.example` to `.env.local`
    - Update the environment variables:
    ```env
-   MONGODB_URI=mongodb://localhost:27017/career_secure_db
-   NEXTAUTH_SECRET=your-super-secret-key-here
-   NEXTAUTH_URL=http://localhost:3000
+   MONGODB_URI="your mongodb"
+   NEXTAUTH_SECRET=your-secret-key-here
+   NEXTAUTH_URL="localhost:3000 or deployed link"
    NODE_ENV=development
    ```
 
-4. **MongoDB Setup**
+3. **MongoDB Setup**
    - Install MongoDB locally or use MongoDB Atlas
    - Create a database named `career_secure_db`
-   - Update `MONGODB_URI` in `.env.local`
+   - Update `MONGODB_URI` in `.env`
 
-5. **Seed the Database (Optional)**
-   ```bash
-   node scripts/seed.js
-   ```
-   This creates:
-   - Admin user: `admin@example.com` / `password123`
-   - Sample users for testing
-
-6. **Run the Development Server**
+4. **Run the Development Server**
    ```bash
    npm run dev
    ```
 
-7. **Access the Application**
+5. **Access the Application**
    - Open [http://localhost:3000](http://localhost:3000)
    - Login with demo credentials or create new users
 
@@ -234,10 +200,4 @@ The application is fully responsive and works on:
    - Run `npm install` to ensure all dependencies are installed
    - Check for TypeScript errors with `npm run lint`
 
-## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Support
-
-For support, please contact the development team or create an issue in the repository.
